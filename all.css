@@ -1,0 +1,89 @@
+* {box-sizing: border-box;}
+body {
+       scroll-behavior: smooth;
+ }
+ nav { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    border: 1px;
+    background-color: rgb(31, 22, 22);
+    width: 100%;
+    padding: 20px;
+}
+/* .hive {
+        background-color: rgb(165, 89, 228);
+        background-position: center;
+        border-radius: 5px;
+        transition: all ease .2s;}
+.hive img {
+    height: 200px;
+    width: auto;
+} */
+.contact {
+    gap: 5px;
+}
+.header {
+    display: flex;
+    border: 2px;
+    height: 200px;
+    background-image: url(../ban.webp);
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+width: 625px;
+height: 530px;
+}
+.said {
+    font-display: color aqua;
+    text-align: center;  
+}
+ @media screen and (max-width:850px) {
+    .container{
+         flex-wrap:wrap;}
+    .hive {
+        width:49%;}
+    .container {
+            flex-wrap: wrap;}
+    .header {
+            width: 100%}
+     .magic {
+        width: 100%;
+     }   
+        }
+     #success_message {
+         display: none;
+        }
+ @media  screen and (max-width: 700px) {
+     .hive {
+         width: 100%;
+    }
+     .hive p {
+         font-size: 16px;
+     }
+     .container {
+        flex-wrap: wrap;}
+    .header {
+        width: 100%}
+    .magic {
+        width: 100%;
+     }
+     }
+@media  screen and (max-width: 500px) {
+    .hive {
+        width: 100%;
+    }
+    .hive p {
+        font-size: 16px;
+    }
+    .container {
+        flex-wrap: wrap;}
+    .header {
+        width: 100%}
+    .magic {
+        width: 100%;
+    }
+}
