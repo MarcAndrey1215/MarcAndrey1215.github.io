@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="./all.css">
     <style>
         body {
+            
             background-color: rgb(92, 90, 71);
-            background-image: url(../bg.jpg) ;
+            background-image: url(../red.jpg );
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         .form-group {
-          color:aqua
+          align-content: center;
+          color:rgb(245, 248, 38);
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-
+         .ride {
+         display: inline-block;
+        } 
         
     </style>
 </head>
@@ -38,22 +45,31 @@
                     <a class="nav-link" href="./about.html">About Us </a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" >
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-success" type="submit"> Search</button>
             </form>
         </div>
     </div>
 </nav> 
+  
 
-    <div class="container px-4 g-20px " >
+    <div class="container px-4 g-20px ">
+      <br><br>
+      <form class="ride" action="" method="post">
+    <a href="https://www.taoticket.com/en/cruise-lines">
+      <h3>Cruise-Lines</h3>
+    </a><br>
+    <a href="https://www.seatguru.com/browseairlines">
+      <h3>Air-Lines</h3> </a>
+  </form>
         <br><br>
         <form class="well form-horizontal" action=" " method="post"  id="contact_form">
             <fieldset>
-  <div class="row gx-5">
+  <div class="col-md-8  g-20px">
     <div class="form-group">
-        <label class="col-md-4 control-label">First Name</label>  
-        <div class="col-md-4 inputGroupContainer">
+        <label class="row-md-4 control-label">First Name</label>  
+        <div class="row-md-4 inputGroupContainer">
         <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
         <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
@@ -61,8 +77,8 @@
         </div>
         </div>
         <div class="form-group">
-            <label class="col-md-4 control-label" >Last Name</label> 
-              <div class="col-md-4 inputGroupContainer">
+            <label class="row-md-4 control-label" >Last Name</label> 
+              <div class="row-md-4 inputGroupContainer">
               <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
             <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
@@ -70,8 +86,8 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-4 control-label">Username</label>  
-            <div class="col-md-4 inputGroupContainer">
+            <label class="row-md-4 control-label">Username</label>  
+            <div class="row-md-4 inputGroupContainer">
             <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
             <input  name="user_name" placeholder="Username" class="form-control"  type="text">
@@ -79,8 +95,8 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-4 control-label" >Password</label> 
-              <div class="col-md-4 inputGroupContainer">
+            <label class="row-md-4 control-label" >Password</label> 
+              <div class="row-md-4 inputGroupContainer">
               <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
             <input name="user_password" placeholder="Password" class="form-control"  type="password">
@@ -88,8 +104,8 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-4 control-label" >Confirm Password</label> 
-              <div class="col-md-4 inputGroupContainer">
+            <label class="row-md-4 control-label" >Confirm Password</label> 
+              <div class="row-md-4 inputGroupContainer">
               <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
             <input name="confirm_password" placeholder="Confirm Password" class="form-control"  type="password">
@@ -97,8 +113,8 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-4 control-label">E-Mail</label>  
-              <div class="col-md-4 inputGroupContainer">
+            <label class="row-md-4 control-label">E-Mail</label>  
+              <div class="row-md-4 inputGroupContainer">
               <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
             <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
@@ -106,8 +122,8 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-4 control-label">Contact No.</label>  
-              <div class="col-md-4 inputGroupContainer">
+            <label class="row-md-4 control-label">Contact No.</label>  
+              <div class="row-md-4 inputGroupContainer">
               <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
             <input name="contact_no" placeholder="(639)" class="form-control" type="text">
@@ -118,8 +134,8 @@
     
           <!-- Button -->
           <div class="form-group">
-            <label class="col-md-4 control-label"></label>
-            <div class="col-md-4"><br>
+            <label class="row-md-4 control-label"></label>
+            <div class="row-md-4"><br>
               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
             </div>
           </div>
@@ -130,5 +146,6 @@
     </div>
  <script src="../day10/trial.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <br><br><br><br><br>
 </body>
 </html>
